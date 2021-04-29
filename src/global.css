@@ -1,0 +1,65 @@
+.wgui-message {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 11010;
+  box-sizing: border-box;
+  padding: 10px;
+  min-height: 120px;
+  width: 120px;
+  background-color: rgba(0, 0, 0, 0.5);
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  border-radius: 5px;
+  background-clip: padding-box;
+}
+.wgui-message__inner {
+  text-align: center;
+}
+.wgui-message_icon {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background-image: url(//wximg.qq.com/tmt/game/dist/img/modules/wui-message/message-icon-loading@2x.png);
+  background-size: 50px;
+  -webkit-animation: loading 1s steps(12, end) infinite;
+}
+.wgui-message_text {
+  color: #fff;
+  font-size: 14px;
+  word-break: break-all;
+  word-wrap: break-word;
+  white-space: normal;
+}
+@-webkit-keyframes loading {
+  0% {
+    -webkit-transform: rotate3d(0, 0, 1, 0deg);
+  }
+
+  to {
+    -webkit-transform: rotate3d(0, 0, 1, 1turn);
+  }
+}
+
+@keyframes loading {
+  0% {
+    -webkit-transform: rotate3d(0, 0, 1, 0deg);
+  }
+
+  to {
+    -webkit-transform: rotate3d(0, 0, 1, 1turn);
+  }
+}
+
+@keyframes loading {
+  0% {
+    -webkit-transform: rotate3d(0, 0, 1, 0deg);
+    transform: rotate3d(0, 0, 1, 0deg);
+  }
+
+  to {
+    -webkit-transform: rotate3d(0, 0, 1, 1turn);
+    transform: rotate3d(0, 0, 1, 1turn);
+  }
+}
